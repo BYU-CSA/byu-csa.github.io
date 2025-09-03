@@ -53,8 +53,6 @@ const { Content: About } = await render(about!);
 				))}
 			</ul>
 		</Card>
-	</div>
-	<div class="layout-grid-right" slot="right">
 		<Card>
 			<div class="header-container">
 				<Icon type='lucide' name="user" width={24} height={24} class='glow-icon' />
@@ -62,6 +60,17 @@ const { Content: About } = await render(about!);
 			</div>
 			<div class="prose">
 				<About />
+			</div>
+		</Card>
+	</div>
+	<div class="layout-grid-right" slot="right">
+		<Card>
+			<div class="header-container">
+				<Icon type='lucide' name="calendar" width={24} height={24} class='glow-icon'/>
+				<h2>Calendar</h2>
+			</div>
+			<div class="content-container">
+				<p>calendar placeholder...</p>
 			</div>
 		</Card>
 		<Card>
