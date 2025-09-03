@@ -32,19 +32,23 @@ const config = defineConfig({
     mdx(),
     sitemap(),
     spectre({
-      name: 'Spectre',
+      name: 'BYU CSA',
       openGraph: {
         home: {
-          title: 'Spectre',
-          description: 'A minimalistic theme for Astro.'
+          title: 'BYU CSA',
+          description: 'BYU Cybersecurity Student Association.'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'Writeups from fellow club members.'
         },
         projects: {
           title: 'Projects'
-        }
+        },
+        // calendar: {
+        //   title: 'Calendar',
+        //   description: 'Upcoming events and meetings.'
+        // }
       },
       // giscus: {
       //   repository: GISCUS_REPO,
