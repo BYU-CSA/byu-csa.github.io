@@ -7,6 +7,7 @@ import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 import ImageGlow from '../components/ImageGlow.astro';
 import Icon from '../components/Icon.astro';
+import Image from 'astro/components/Image.astro';
 import { getCollection } from 'astro:content';
 import { getEntry } from 'astro:content';
 import { render } from 'astro:content';
@@ -31,7 +32,7 @@ const { Content: About } = await render(about!);
 >
 	<div class="layout-grid-left" slot="left">
 		<Card class="flex-col-card">
-			<ImageGlow quality={100} width={80} height={80} src={ProfilePicture} alt="Louis looking out of a window" loading='eager' />
+			<Image quality={100} width={180} height={180} src={ProfilePicture} alt="BYU Cyberia Logo" loading='eager' />
 			<h2>{name}</h2>
 			<ul class="overview-list">
 				{quickInfo.map((info) => (
@@ -41,9 +42,6 @@ const { Content: About } = await render(about!);
 					</li>
 				))}
 			</ul>
-		</Card>
-		<Card>
-			<h3 class="no-mt">Socials</h3>
 			<ul class="overview-list">
 				{socials.map((item) => (
 					<li>
