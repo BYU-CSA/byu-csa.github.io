@@ -45,10 +45,6 @@ const config = defineConfig({
         projects: {
           title: 'Projects'
         },
-        // calendar: {
-        //   title: 'Calendar',
-        //   description: 'Upcoming events and meetings.'
-        // }
       },
       // giscus: {
       //   repository: GISCUS_REPO,
