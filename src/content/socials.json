@@ -7,5 +7,14 @@
     },
     "text": "GitHub",
     "link": "https://github.com/BYU-CSA"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "type": "lucide",
+      "name": "message-circle"
+    },
+    "text": "Discord",
+    "link": "https://discord.gg/QNtYkyHUKR"
   }
 ]
